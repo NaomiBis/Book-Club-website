@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+ <html>
+
+     <!---Head tag--->
+     <head>
+          <title>Personal Website</title><!---our title--->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/><!---linking to css file--->
+	</head>
+	
+	<!---body tag--->
+	<body>
+	
+	<!---background-image--->
+	<div class="background">
+	
+	<!---navigation--->
+	<div class="navigation">
+	    <a class="a active" href="#">HOME</a>
+		<a class="b" href="#">ABOUT</a>
+		<a class="c" href="#">GALLERY</a>
+		<a class="d" href="#">CONTACT</a>
+	</div>
+	
+	<!---home page content--->
+	<div class="content">
+	    <div class="home">
+		    <h1> The Book Club</h1>
+			<h3> Welcome To Your Weekly Read And Reviews</h3>
+        </div>
+	
+	<!---about me page--->
+	<div class="aboutme">
+	    <p>Welcome to the Book Club<br>
+		Take a stroll into our book world and find a new read that will leave you
+        begging for more as we review it with other readers.<br></p>
+		 <br>
+		 <br>
+	     
+		 <p> Everey week we'll be recomending must read books and posting reviews
+		 for all you bookworms eager to read something new and different giving 
+		 you a fresh style of reads</p>
+		 
+	</div>	 
+	
+	<!---gallery page--->
+	    <div class="gallery">
+		<h1>Current Reads</h1>
+		    <div class="image">
+			    <img src="images/more.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/pilgrim.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/paulo.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/next.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/steve.jpg"/>
+			</div>
+			
+			
+	</div>
+	
+	    <!---contact page--->
+	    <div class="contactme">
+	        <div class="contactform">
+		        <form action="" method="post">
+			
+			        <input type="text" name="" class="inputtext" value="First Name">
+			        <input type="text" name="" class="inputtext" value="Last Name">
+			        <input type="text" name="" class="inputtext" value="Your Email">
+			        <textarea cols="4" rows-"6" class="inputmessage"> Your Message...</textarea>
+	                <input type="button" name="" class="submit" value="Submit">
+		        </form>
+	        </div>	
+	
+	    </div>	
+		
+	</div>
+	
+	<!---linking the jquery script file--->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){
+		    $('a').click(function(){
+			     var selected = $(this);
+				 $('a').removeClass('active');
+				 $(selected).addClass('active');
+			
+			});
+			var $a=$('.a'),
+			$b=$('.b'),
+			$c=$('.c'),
+			$d=$('.d'),
+			$home=$('.home')
+			$aboutme=$('.aboutme'),
+			$gallery=$('.gallery'),
+			$contactme=$('.contactme');
+			
+			$a.click(function(){
+			    $home.fadeIn();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+		    });
+			
+		    $b.click(function(){
+				$aboutme.fadeIn();
+				$home.fadeOut();
+				$gallery.fadeOut();
+				$contactme.fadeOut();
+		     });
+	      	$c.click(function(){
+			    $gallery.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$contactme.fadeOut();
+		    });
+	        $d.click(function(){
+			    $contactme.fadeIn();
+				$home.fadeOut();
+				$aboutme.fadeOut();
+				$gallery.fadeOut();
+		    });		
+	});	
+	</script>
+	</div>
+    </body>	
+	<!---footer tag--->
+	<footer>
+
+	
+</html>	

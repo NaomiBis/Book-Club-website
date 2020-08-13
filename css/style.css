@@ -1,0 +1,190 @@
+/*apply this on all pages*/
+*{
+	
+	margin: 0;
+	padding: 0;
+}
+/*apply this styling on the html and body tags*/
+html, body{
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+/*setting the background image*/
+.background{
+	
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/booksc.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: auto;
+	overflow-y: auto;
+}
+
+/*styling the navigation*/
+.navigation{
+	width: 400px;
+	height: auto;
+	
+	position: absolute;
+	top: 10%;
+	left: 0;
+}
+
+.navigation a{
+	text-decoration: none;
+	font-size: 28px;
+	font-family: courier new;
+	font-weight: bold;
+	width: 100%;
+	height: 90px;
+	margin: 5px 0;
+	float: left;
+	display: inline-block;
+	background-color: back;
+	color: white;
+	line-height: 90px;
+	text-align: center;
+	transition: 300ms;
+}
+	
+/*styling the list items and hover effect*/
+a.active, .navigation a:hover{
+   background-color: white;
+   color: black;
+   width: 100%;
+}
+
+/*styling the content container*/
+.content{
+	position: absolute;
+	width: 940px;
+	min-height: 500px;
+	height: auto;
+	/*background-color: pink; */
+	right: 0;
+	top: 10%;
+}
+	
+.home{
+	position: absolute;
+	right: 0;
+	bottom: 70%;
+	color: royalblue;
+	font-family: courier new;
+}
+
+.home h1{
+	font-size: 85px;
+	padding-right: 100px;
+	border-bottom: 1px ;
+	text-transform: uppercase;
+}
+
+.home h3{
+	font-size: 28px;
+	padding: 7px;
+	opacity: 0.5;
+}
+/*styling the about me page*/
+.aboutme{
+    position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 10px;
+	color: white;
+	font-family: courier new;
+	padding: 0 60px;
+	display: none;
+	
+}
+
+.aboutme p{
+	font-size: 24px;
+    line-height: 28px;
+	margin-bottom: 15px;
+}
+
+/*styling the gallery page*/
+.gallery{
+	
+	position: absolute;
+	right:0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;
+	font-family: courier new;
+}
+
+.gallery .image{
+	width: 23%;
+	margin: 3%;
+	float: left;
+}
+
+.image img{
+    width: 100%;
+	transition: all ease 0.2s;
+	-webkit-transition: all ease 0.2s;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+.image img:hover{
+    transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+
+/*styling the contact page*/
+.contactme{
+    position: absolute;
+	right:0;
+	top: 10px;
+	color: white;
+	padding: 0 60px;
+	display: none;	
+}
+
+.inputtext{
+	
+	width: 55%;
+	height: 65px;
+	border: 3px solid black;
+	color: royalblue;
+	background-color: rgba (0,0,0,0,7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+	margin-bottom: 15px;
+}
+
+.inputmessage{
+	
+	width: 55%;
+	height: 65px;
+	border: 3px solid black;
+	color: royalblue;
+	background-color: rgba (0,0,0,0,7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+}
+
+.submit{
+    width: 160px;
+	height: 65px;
+	font-family: arial;
+	background-color: white;
+	color: royalblue;
+	font-size: 28px;
+	border: none;
+	font-weight: bold;
+	float: left;
+	clear: both;
+	margin-top: 25px;
+}
+
